@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+   
+    .large {                
+    	font-size:300%;	    
+    }
+    
+    #green {                   
+    	color:green;	    
+    }
+    
+    .underline {
+    	text-decoration:underline;	    
+    }
+    
+    .bold {
+    	font-weight:bold;	    
+    }
+    
+    .graybox {
+    	background-color:#088A85;	 
+    	width:200px;
+    	height:200px;
+    	float:left;
+    }
+    
+    .greenbox {
+    	background-color:#8ED359;
+    	width:300px;
+    	height:100px;
+    	float:right;
+    }
+    
+    .floatleft {
+    	float:left;	    
+    }
+    
+    .clear {
+    	clear:both;	    
+    }
+    
+    </style>       
+</head>
+
+<body>
+
+	<div class="graybox">
+
+	<p class="large">This is some text.</p><!--you can use 'large' for many elements on a page.-->
+	
+	</div>
+	
+	<div class="greenbox">
+	
+	<p id="green">This is some more text.</p><!--only use 'id' for a single element on the page.-->
+	
+	</div>
+	
+	<div class="clear"></div>
+	
+	<p id="green" class="large">This is some crazy text.</p><!--or you could use both!-->
+	
+	<p class="floatleft">The third <span class="underline">word</span> in this paragraph is underlined.</p><!--This will single out an element and underline it.-->
+	
+	<p>The third <span class="underline large bold">word</span> in this paragraph is underlined.</p><!--This will do multiple things to an element.-->
+
+</body>
+</html>
